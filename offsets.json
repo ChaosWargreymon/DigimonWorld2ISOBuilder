@@ -1,0 +1,338 @@
+{
+    "DATAFILE\\DATA1100.BIN": [
+        "0x147a4b68"
+    ],
+    "DATAFILE\\DIGIMNDT.BIN": [
+        "0x147a5498"
+    ],
+    "DATAFILE\\ENEMYSET.BIN": [
+        "0x147a66f8"
+    ],
+    "DATAFILE\\FACE_TIM.BIN": [
+        "0x147ac2d8"
+    ],
+    "DATAFILE\\ITEMDATA.BIN": [
+        "0x147b9f58"
+    ],
+    "DATAFILE\\KAGE0000.BIN": [
+        "0x147be8d8"
+    ],
+    "DATAFILE\\KAGE0001.BIN": [
+        "0x147c3b88"
+    ],
+    "DATAFILE\\MODELDAT.BIN": [
+        "0x147c8e38"
+    ],
+    "DATAFILE\\MODELDT0.BIN": [
+        "0x147cf348"
+    ],
+    "DATAFILE\\MODELDT1.BIN": [
+        "0x147d3398"
+    ],
+    "DATAFILE\\MODELDT2.BIN": [
+        "0x147d5858"
+    ],
+    "DATAFILE\\WAZADATA.BIN": [
+        "0x147d6ab8"
+    ],
+    "DUNG\\DATA4000.BIN": [
+        "0x147deb58"
+    ],
+    "DUNG\\DGWN0000.BIN": [
+        "0x147df488"
+    ],
+    "DUNG\\TBL_STAG.BIN": [
+        "0x147e06e8"
+    ],
+    "DUNG\\DUNG\\DUNG4000.BIN": [
+        "0x147e2278"
+    ],
+    "DUNG\\DUNG\\DUNG4100.BIN": [
+        "0x147e99e8"
+    ],
+    "DUNG\\DUNG\\DUNG4200.BIN": [
+        "0x147f4878"
+    ],
+    "DUNG\\DUNG\\DUNG4300.BIN": [
+        "0x147ff708"
+    ],
+    "DUNG\\DUNG\\DUNG4400.BIN": [
+        "0x148080d8"
+    ],
+    "DUNG\\DUNG\\DUNG4500.BIN": [
+        "0x14816fb8"
+    ],
+    "DUNG\\DUNG\\DUNG4600.BIN": [
+        "0x148270f8"
+    ],
+    "DUNG\\DUNG\\DUNG4700.BIN": [
+        "0x148356a8"
+    ],
+    "DUNG\\DUNG\\DUNG4800.BIN": [
+        "0x14847ca8"
+    ],
+    "DUNG\\DUNG\\DUNG4900.BIN": [
+        "0x1485c768"
+    ],
+    "DUNG\\DUNG\\DUNG5000.BIN": [
+        "0x14872488"
+    ],
+    "DUNG\\DUNG\\DUNG5100.BIN": [
+        "0x14886f48"
+    ],
+    "DUNG\\DUNG\\DUNG5200.BIN": [
+        "0x148a0388"
+    ],
+    "DUNG\\DUNG\\DUNG5300.BIN": [
+        "0x148bb358"
+    ],
+    "DUNG\\DUNG\\DUNG5400.BIN": [
+        "0x148d22d8"
+    ],
+    "DUNG\\DUNG\\DUNG5500.BIN": [
+        "0x148eee38"
+    ],
+    "DUNG\\DUNG\\DUNG5600.BIN": [
+        "0x1490f0b8"
+    ],
+    "DUNG\\DUNG\\DUNG5700.BIN": [
+        "0x14933388"
+    ],
+    "DUNG\\DUNG\\DUNG5800.BIN": [
+        "0x1495b6a8"
+    ],
+    "DUNG\\DUNG\\DUNG5900.BIN": [
+        "0x14985e88"
+    ],
+    "DUNG\\DUNG\\DUNG6000.BIN": [
+        "0x149b21f8"
+    ],
+    "DUNG\\DUNG\\DUNG6100.BIN": [
+        "0x149d5268"
+    ],
+    "DUNG\\DUNG\\DUNG6200.BIN": [
+        "0x14a00378"
+    ],
+    "DUNG\\DUNG\\DUNG6300.BIN": [
+        "0x14a2b488"
+    ],
+    "DUNG\\DUNG\\DUNG6400.BIN": [
+        "0x14a59cb8"
+    ],
+    "DUNG\\DUNG\\DUNG6500.BIN": [
+        "0x14a75ee8"
+    ],
+    "DUNG\\DUNG\\DUNG6600.BIN": [
+        "0x14aa2258"
+    ],
+    "DUNG\\DUNG\\DUNG6700.BIN": [
+        "0x14ace5c8"
+    ],
+    "DUNG\\DUNG\\DUNG6800.BIN": [
+        "0x14ae7a08"
+    ],
+    "DUNG\\DUNG\\DUNG6900.BIN": [
+        "0x14afcdf8"
+    ],
+    "DUNG\\DUNG\\DUNG7000.BIN": [
+        "0x14afe058"
+    ],
+    "DUNG\\DUNG\\DUNG7100.BIN": [
+        "0x14afe988"
+    ],
+    "DUNG\\DUNG\\DUNG7200.BIN": [
+        "0x14b00518"
+    ],
+    "DUNG\\DUNG\\DUNG7300.BIN": [
+        "0x14b3c098"
+    ],
+    "DUNG\\DUNG\\DUNGTEST.BIN": [
+        "0x14b3c9c8"
+    ],
+    "DUNG\\FLOOR\\DGFL0001.BIN": [
+        "0x14b3e558"
+    ],
+    "DUNG\\FLOOR\\DGFL0002.BIN": [
+        "0x14b43808"
+    ],
+    "DUNG\\FLOOR\\DGFL0003.BIN": [
+        "0x14b48ab8"
+    ],
+    "DUNG\\FLOOR\\DGFL0004.BIN": [
+        "0x14b4dd68"
+    ],
+    "DUNG\\FLOOR\\DGFL0005.BIN": [
+        "0x14b53018"
+    ],
+    "DUNG\\FLOOR\\DGFL0006.BIN": [
+        "0x14b582c8"
+    ],
+    "DUNG\\MESS\\MESS4004.BIN": [
+        "0x14b5e7d8"
+    ],
+    "DUNG\\MESS\\MESS4105.BIN": [
+        "0x14b5f108"
+    ],
+    "DUNG\\MESS\\MESS4205.BIN": [
+        "0x14b5fa38"
+    ],
+    "DUNG\\MESS\\MESS4302.BIN": [
+        "0x14b60368"
+    ],
+    "DUNG\\MESS\\MESS4306.BIN": [
+        "0x14b60c98"
+    ],
+    "DUNG\\MESS\\MESS4407.BIN": [
+        "0x14b615c8"
+    ],
+    "DUNG\\MESS\\MESS4507.BIN": [
+        "0x14b61ef8"
+    ],
+    "DUNG\\MESS\\MESS4607.BIN": [
+        "0x14b62828"
+    ],
+    "DUNG\\MESS\\MESS4608.BIN": [
+        "0x14b63158"
+    ],
+    "DUNG\\MESS\\MESS4706.BIN": [
+        "0x14b63a88"
+    ],
+    "DUNG\\MESS\\MESS4807.BIN": [
+        "0x14b643b8"
+    ],
+    "DUNG\\MESS\\MESS4907.BIN": [
+        "0x14b64ce8"
+    ],
+    "DUNG\\MESS\\MESS5008.BIN": [
+        "0x14b65618"
+    ],
+    "DUNG\\MESS\\MESS5109.BIN": [
+        "0x14b65f48"
+    ],
+    "DUNG\\MESS\\MESS5209.BIN": [
+        "0x14b66878"
+    ],
+    "DUNG\\MESS\\MESS5310.BIN": [
+        "0x14b671a8"
+    ],
+    "DUNG\\MESS\\MESS5411.BIN": [
+        "0x14b68408"
+    ],
+    "DUNG\\MESS\\MESS5511.BIN": [
+        "0x14b68d38"
+    ],
+    "DUNG\\MESS\\MESS5512.BIN": [
+        "0x14b69668"
+    ],
+    "DUNG\\MESS\\MESS5601.BIN": [
+        "0x14b6a8c8"
+    ],
+    "DUNG\\MESS\\MESS5613.BIN": [
+        "0x14b6b1f8"
+    ],
+    "DUNG\\MESS\\MESS5713.BIN": [
+        "0x14b6bb28"
+    ],
+    "DUNG\\MESS\\MESS5813.BIN": [
+        "0x14b6c458"
+    ],
+    "DUNG\\MESS\\MESS5914.BIN": [
+        "0x14b6cd88"
+    ],
+    "DUNG\\MESS\\MESS6008.BIN": [
+        "0x14b6d6b8"
+    ],
+    "DUNG\\MESS\\MESS6011.BIN": [
+        "0x14b6e918"
+    ],
+    "DUNG\\MESS\\MESS6014.BIN": [
+        "0x14b6fb78"
+    ],
+    "DUNG\\MESS\\MESS6015.BIN": [
+        "0x14b704a8"
+    ],
+    "DUNG\\MESS\\MESS6115.BIN": [
+        "0x14b70dd8"
+    ],
+    "DUNG\\MESS\\MESS6215.BIN": [
+        "0x14b71708"
+    ],
+    "DUNG\\MESS\\MESS6316.BIN": [
+        "0x14b72038"
+    ],
+    "DUNG\\MESS\\MESS6724.BIN": [
+        "0x14b73298"
+    ],
+    "DUNG\\MESS\\MESS6820.BIN": [
+        "0x14b75758"
+    ],
+    "DUNG\\MESS\\MESS6901.BIN": [
+        "0x14b76088"
+    ],
+    "DUNG\\MESS\\MESS6902.BIN": [
+        "0x14b769b8"
+    ],
+    "DUNG\\MESS\\MESS7001.BIN": [
+        "0x14b77c18"
+    ],
+    "DUNG\\MESS\\MESS7102.BIN": [
+        "0x14b78548"
+    ],
+    "DUNG\\MESS\\MESS7301.BIN": [
+        "0x14b78e78"
+    ],
+    "DUNG\\SOUND\\MPBOSS00.BIN": [
+        "0x14b7a0d8"
+    ],
+    "DUNG\\SOUND\\MPBOSS01.BIN": [
+        "0x14b8bda8"
+    ],
+    "DUNG\\SOUND\\MPBOSS02.BIN": [
+        "0x14b9f608"
+    ],
+    "DUNG\\SOUND\\MPBOSS03.BIN": [
+        "0x14bac028"
+    ],
+    "DUNG\\SOUND\\MPBOSS04.BIN": [
+        "0x14bb9378"
+    ],
+    "DUNG\\SOUND\\MPBOSS05.BIN": [
+        "0x14bc38d8"
+    ],
+    "DUNG\\SOUND\\MPBOSS06.BIN": [
+        "0x14bcf098"
+    ],
+    "DUNG\\SOUND\\MPBOSS07.BIN": [
+        "0x14bdb188"
+    ],
+    "DUNG\\SOUND\\MPSE_D00.BIN": [
+        "0x14bf2108"
+    ],
+    "DUNG\\SOUND\\MVBOSS00.BIN": [
+        "0x14bffd88"
+    ],
+    "DUNG\\SOUND\\MVBOSS01.BIN": [
+        "0x14c1ad58"
+    ],
+    "DUNG\\SOUND\\MVBOSS02.BIN": [
+        "0x14c33868"
+    ],
+    "DUNG\\SOUND\\MVBOSS03.BIN": [
+        "0x14bffd88"
+    ],
+    "DUNG\\SOUND\\MVBOSS04.BIN": [
+        "0x14bffd88"
+    ],
+    "DUNG\\SOUND\\MVBOSS05.BIN": [
+        "0x14c85108"
+    ],
+    "DUNG\\SOUND\\MVBOSS06.BIN": [
+        "0x14c9c088"
+    ],
+    "DUNG\\SOUND\\MVBOSS07.BIN": [
+        "0x14cb82b8"
+    ],
+    "DUNG\\SOUND\\MVSE_D00.BIN": [
+        "0x14cd44e8"
+    ]
+}
