@@ -1,8 +1,8 @@
 {
     "General": {
-        "DataPath": "D:\\Kev\\Documents\\Game Modding\\Digimon World 2\\files_original\\AAA\\4.AAA",
-        "BinaryPath": "D:\\Kev\\Documents\\Game Modding\\Digimon World 2\\DW2.bin",
-        "OutputPath": "D:\\Kev\\Documents\\Game Modding\\Digimon World 2\\scripts\\build\\DW2_built.bin",
+        "DataPath": "****\\AAA\\4.AAA",
+        "BinaryPath": "****\\DW2.bin",
+        "OutputPath": "****\\DW2_built.bin",
         "LogLevel": "5",
         "LogFile": "True"
     },
