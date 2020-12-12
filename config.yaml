@@ -1,0 +1,11 @@
+general:
+  data_path: '****\AAA\4.AAA'
+  binary_path: '****\DW2.bin'
+  output_path: '****\DW2_built.bin'
+  log_level: 5
+  log_file: True
+
+files:
+  supported_directories:
+    - DATAFILE
+    - DUNG

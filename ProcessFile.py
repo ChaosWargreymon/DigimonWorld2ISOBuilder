@@ -4,17 +4,21 @@ from pathlib import Path
 
 from Utils import Logging
 from Utils import FileIO
-from Utils import Config
 from Utils import Debugging
 
 import timeit
+import confuse
 
-class ProcessFile(object):
+class DigimonWorld2BuildTool(object):
     def __init__(self, args):
+        config = confuse.Configuration('DigimonWorld2BuildTool')
+        config.set_file("config.yaml")
+
+        self.data_dir = config["general"]["data_path"].get(str)
+        self.binary_file = config["general"]["binary_path"].get(str)
+        self.output_file = config["general"]["output_path"].get(str)
+
         self.print_header()
-        self.data_dir = Config.settings.get("DataPath")
-        self.binary_file = Config.settings.get("BinaryPath")
-        self.output_file = Config.settings.get("OutputPath")
         self.supported_dirs = []
 
         self.chunk_size = 2048
@@ -31,15 +35,16 @@ class ProcessFile(object):
 
         # For each file in the supported directories (recursive),
         # add the file to a list.
-        for supported_dir in Config.files.get("SupportedDirectories"):
+        #for supported_dir in Config.files.get("SupportedDirectories"):
+        for supported_dir in config["files"]["supported_directories"].get(list):
             for file_path in [file_glob for file_glob in (Path(self.data_dir) / supported_dir).rglob("*") if not file_glob.is_dir()]:
                 self.supported_dirs.append(file_path)
 
         # Basic logging info (currently unused)
-        self.logging = Logging(
-            Config.settings.get("LogLevel"),
-            Config.settings.get("ConsolePrint")
-        )
+        #self.logging = Logging(
+        #    Config.settings.get("LogLevel"),
+        #    Config.settings.get("ConsolePrint")
+        #)
 
         # File containing offsets
         self.offsets = FileIO(
@@ -48,9 +53,9 @@ class ProcessFile(object):
 
         # allow for the option to generate offset file or create
         # a patched ISO.
-        if args[0].lower() == "offsets" or args == "offsets":
+        if args.lower() == "offsets":
             self.find_offsets()
-        elif args[0].lower() == "patch" or args == "patch":
+        elif args.lower() == "patch":
             self.patch_file()
         else:
             print("Unrecognised action")
@@ -128,7 +133,7 @@ class ProcessFile(object):
             binary_chunk = binary_file.read_chunk(chunk_size=self.chunk_size, offset=current_offset)
             sector_padding = binary_file.read_chunk(chunk_size=self.sector_padding, offset=current_offset + self.chunk_size)
 
-            if current_offset in [ProcessFile.hex_to_int(value) for value in self.offsets.values() for value in value]:
+            if current_offset in [DigimonWorld2BuildTool.hex_to_int(value) for value in self.offsets.values() for value in value]:
                 for key in list(self.offsets):
                     print("Patching file: {}".format(key))
                     value = self.offsets[key]
@@ -140,7 +145,7 @@ class ProcessFile(object):
                         self.offsets.pop(key)
                         continue
 
-                    if current_offset in [ProcessFile.hex_to_int(offset) for offset in value]:
+                    if current_offset in [DigimonWorld2BuildTool.hex_to_int(offset) for offset in value]:
                         for source_chunk in source_file.read_in_chunks(chunk_size=self.chunk_size):
                             source_chunk_len = len(source_chunk)
 
@@ -179,6 +184,6 @@ class ProcessFile(object):
         return self.offset_adjustment + (iterator * self.sector_size)
 
 if len(argv) > 1:
-    ProcessFile(argv[1:])
+    DigimonWorld2BuildTool(argv[1])
 else:
-    ProcessFile("patch")
+    DigimonWorld2BuildTool("patch")
