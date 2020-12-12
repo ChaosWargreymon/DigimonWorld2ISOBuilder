@@ -17,6 +17,7 @@ class DigimonWorld2BuildTool(object):
         self.data_dir = config["general"]["data_path"].get(str)
         self.binary_file = config["general"]["binary_path"].get(str)
         self.output_file = config["general"]["output_path"].get(str)
+        self.batch_factor = config["general"]["batch_factor"].get(int)
 
         self.print_header()
         self.supported_dirs = []
@@ -115,6 +116,7 @@ class DigimonWorld2BuildTool(object):
 
         offset_file.write_json(self.offsets)
 
+    @Debugging.time_action
     def patch_file(self):
         """Patch the source files into a workable ISO.
         """
@@ -128,7 +130,13 @@ class DigimonWorld2BuildTool(object):
 
         patched_data.write_chunk(binary_file.read_chunk(chunk_size=self.offset_adjustment))
 
+        batch = bytes()
+
         while (iterator * self.sector_size) < binary_file.file_size():
+            if len(batch) >= (self.sector_size * self.batch_factor):
+                patched_data.write_chunk(batch)
+                batch = bytes()
+
             current_offset = self.offset_adjustment + (iterator * self.sector_size)
             binary_chunk = binary_file.read_chunk(chunk_size=self.chunk_size, offset=current_offset)
             sector_padding = binary_file.read_chunk(chunk_size=self.sector_padding, offset=current_offset + self.chunk_size)
@@ -150,29 +158,31 @@ class DigimonWorld2BuildTool(object):
                             source_chunk_len = len(source_chunk)
 
                             if source_chunk_len < self.chunk_size:
-                                patched_data.write_chunk(source_chunk)
-                                patched_data.write_chunk(bytes([0] * (self.chunk_size - source_chunk_len)))
+                                batch += source_chunk
+                                batch += (bytes([0] * (self.chunk_size - source_chunk_len)))
                             else:
-                                patched_data.write_chunk(source_chunk)
-
+                                batch += source_chunk
                             
                             # This is what is wrong because it's not calculating the sector padding
                             # offset each time it hits this point. It is simply re-using the previous
                             # offset.
 
-                            #TODO - make this work right by dynamically calculating the correct offset
                             current_offset = self.offset_adjustment + (iterator * self.sector_size)
-                            patched_data.write_chunk(binary_file.read_chunk(chunk_size=self.sector_padding, offset=current_offset + self.chunk_size))
+                            batch += binary_file.read_chunk(chunk_size=self.sector_padding, offset=current_offset + self.chunk_size)
 
                             iterator += 1
 
                         self.offsets.pop(key)
 
             else:
-                patched_data.write_chunk(binary_chunk)
-                patched_data.write_chunk(sector_padding)
+                batch += binary_chunk
+                batch += sector_padding
 
                 iterator += 1
+
+        if len(batch) != 0:
+            patched_data.write_chunk(batch)
+            batch = bytes()
 
     @staticmethod
     def hex_to_int(hex_string):
