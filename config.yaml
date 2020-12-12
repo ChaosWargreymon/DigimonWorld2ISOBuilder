@@ -2,6 +2,7 @@ general:
   data_path: '****\AAA\4.AAA'
   binary_path: '****\DW2.bin'
   output_path: '****\DW2_built.bin'
+  batch_factor: 50
   log_level: 5
   log_file: True
 
