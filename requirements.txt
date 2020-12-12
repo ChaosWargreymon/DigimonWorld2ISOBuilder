@@ -1,1 +1,3 @@
-confuse
+confuse==1.4.0
+idna==2.9
+cx-Freeze==6.4.2

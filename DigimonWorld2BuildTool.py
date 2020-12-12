@@ -40,12 +40,6 @@ class DigimonWorld2BuildTool(object):
             for file_path in [file_glob for file_glob in (Path(self.data_dir) / supported_dir).rglob("*") if not file_glob.is_dir()]:
                 self.supported_dirs.append(file_path)
 
-        # Basic logging info (currently unused)
-        #self.logging = Logging(
-        #    Config.settings.get("LogLevel"),
-        #    Config.settings.get("ConsolePrint")
-        #)
-
         # File containing offsets
         self.offsets = FileIO(
             Path(__file__).resolve().parent / "offsets.json").read_json(
