@@ -2,10 +2,10 @@ from cx_Freeze import setup, Executable
 
 base = None
 
-executables = [Executable("ProcessFile.py", base=base)]
+executables = [Executable("DigimonWorld2ISOBuilder.py", base=base)]
 
-packages = ["idna", "json", "Utils", "timeit", "sys", "pathlib"]
-includefiles = ["config.json", "offsets.json"]
+packages = ["idna", "confuse", "Utils", "timeit", "sys", "pathlib"]
+includefiles = ["config.yaml", "offsets.json"]
 options = {
     "build_exe": {    
         "packages":packages,
@@ -15,9 +15,9 @@ options = {
 }
 
 setup(
-    name = "DW2 Tool",
+    name = "Digimon World 2 ISO Builder",
     options = options,
-    version = "0.1",
-    description = "DW2 Tool",
+    version = "0.2b",
+    description = "Digimon World 2 ISO Builder",
     executables = executables
 )

@@ -22,7 +22,7 @@ A number of pre-requisites are required for the tool to work successfully.
 
 ## Running
 
-You will need to use `cmd` to run the tool. To do this, open a command line interface in the directory and run `DigimonWorld2BuildTool.exe`.
+You will need to use `cmd` to run the tool. To do this, open a command line interface in the directory and run `DigimonWorld2ISOBuilder.exe`.
 
 ## Development Pre-requesites
 If you wish to test and add to the code, you will need to pip install the pre-requisites from the `requirements.txt` file.
